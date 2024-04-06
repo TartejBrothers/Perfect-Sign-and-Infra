@@ -118,3 +118,9 @@ body {
   font-weight: 700;
   font-size: 50px;
 }
+.homecarousel p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  width: 80%;
+}
