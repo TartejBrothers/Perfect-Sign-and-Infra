@@ -4,6 +4,10 @@
   font-family: "Outfit", sans-serif;
   box-sizing: border-box;
   color: #ffffff;
+  overflow-x: hidden;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -40,7 +44,7 @@ body {
   flex-direction: row;
   color: white;
   padding: 1rem 2rem;
-  height: 100px;
+  height: 140px;
 }
 .navbarright,
 .navbarleft {
@@ -48,6 +52,7 @@ body {
   align-items: center;
   flex-direction: row;
   gap: 20px;
+  z-index: 100;
 }
 .navbarright ul li {
   list-style: none;
@@ -55,9 +60,11 @@ body {
   margin-right: 20px;
 }
 .homeheader {
+  overflow-y: hidden;
   background-image: url("../images/homeheader.png");
   background-size: cover;
   background-position: center;
+  z-index: 1;
   height: 100vh;
 }
 .homeheadercenter {
@@ -69,13 +76,31 @@ body {
   text-align: center;
   gap: 20px;
 }
+.homeheadercenter h1 {
+  font-weight: 700;
+  font-size: 70px;
+}
 .homeheadercenter p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 .homeheadercenter button {
   padding: 10px 20px;
+  margin-top: 40px;
   border: none;
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  color: #000000;
   cursor: pointer;
+}
+.bluebloom {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 10;
+  width: 90vw;
+  overflow: hidden;
 }
