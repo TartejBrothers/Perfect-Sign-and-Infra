@@ -101,6 +101,20 @@ body {
   position: absolute;
   opacity: 0.5;
   z-index: 10;
-  width: 90vw;
+  width: 60vw;
+  max-height: 140vh;
   overflow: hidden;
+}
+.homecarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  z-index: 100;
+}
+.homecarousel h1 {
+  font-weight: 700;
+  font-size: 50px;
 }
