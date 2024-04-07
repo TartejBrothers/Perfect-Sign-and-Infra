@@ -75,19 +75,10 @@ let width = carousel.offsetWidth;
 window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.matchMedia("(max-width: 1000px)").matches) {
-    const dropdown = document.querySelector(".dropdown");
-    const dropdownContent = document.querySelector(".dropdown-content");
-
-    dropdown.addEventListener("click", function () {
-      dropdownContent.classList.toggle("active");
-    });
-
-    // Close the dropdown menu when clicking outside of it
-    document.addEventListener("click", function (event) {
-      if (!event.target.matches(".dropdown")) {
-        dropdownContent.classList.remove("active");
-      }
-    });
-  }
+  const dropdownIcon = document.querySelector(".dropdown");
+  const dropdownContent = document.querySelector(".dropdown-content");
+  dropdownIcon.addEventListener("click", function () {
+    dropdownContent.style.display =
+      dropdownContent.style.display === "none" ? "flex" : "none";
+  });
 });
