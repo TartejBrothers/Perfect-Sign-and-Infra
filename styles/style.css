@@ -114,6 +114,9 @@ body {
   padding: 50px 20px;
   z-index: 100;
 }
+h1 u {
+  text-decoration-color: #7f00ff;
+}
 .homecarousel h1 {
   font-weight: 700;
   font-size: 50px;
@@ -123,4 +126,55 @@ body {
   font-weight: 300;
   font-size: 24px;
   width: 80%;
+}
+.whatwedo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  z-index: 100;
+}
+.whatwedo h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.whatwedo p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.whatwedotop p,
+.whatwedobottom p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.whatwedotop,
+.whatwedobottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+.whatwedotop .whatwedoright {
+  width: 50%;
+}
+.whatwedotop .whatwedoleft {
+  width: 40%;
+}
+.whatwedoright img,
+.whatwedoleft img {
+  width: 100%;
+}
+.whatwedobottom .whatwedoleft {
+  width: 50%;
+}
+
+.whatwedobottom .whatwedoright {
+  width: 40%;
 }
