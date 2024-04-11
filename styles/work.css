@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   z-index: 1;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 .workheadercenter {
   height: calc(100vh - 100px);
@@ -22,9 +22,8 @@ font {
 
 .workbodydetails {
   width: 80%;
-  margin: 0 auto;
   font-family: "montserrat";
-  margin-top: 30px;
+  margin: 20px auto;
 }
 .workbody {
   display: flex;
@@ -37,6 +36,7 @@ font {
 .workheadertext {
   font-size: 30px;
   font-weight: 700;
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: #7f00ff;
 }
