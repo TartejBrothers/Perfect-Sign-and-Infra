@@ -73,12 +73,3 @@ prev.addEventListener("click", (e) => {
 
 let width = carousel.offsetWidth;
 window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownIcon = document.querySelector(".dropdown");
-  const dropdownContent = document.querySelector(".dropdown-content");
-  dropdownIcon.addEventListener("click", function () {
-    dropdownContent.style.display =
-      dropdownContent.style.display === "none" ? "flex" : "none";
-  });
-});
