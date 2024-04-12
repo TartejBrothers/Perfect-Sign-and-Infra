@@ -14,6 +14,7 @@ a {
 }
 html {
   background: rgb(55, 30, 79);
+  scroll-behavior: smooth;
 }
 .content {
   position: relative;
