@@ -510,3 +510,99 @@ textarea {
     display: none;
   }
 }
+
+/* Carousel  */
+
+/* start: Slider */
+.wrapper {
+  position: relative;
+  max-width: 940px;
+  width: 100%;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #59406e;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.arrow img {
+  width: 20px;
+  height: 20px;
+}
+.arrow:hover {
+  background-color: #59406e;
+}
+.arrow.prev {
+  left: 0;
+}
+.arrow.next {
+  right: 0;
+}
+.card-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 260px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 24px;
+  gap: 24px;
+  cursor: grab;
+  scroll-snap-type: x;
+  scroll-padding-inline: 24px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.card-wrapper.grab {
+  cursor: grabbing;
+  user-select: none;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.card-item {
+  scroll-snap-align: start;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  padding: 16px;
+}
+.card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222;
+}
+.card-title:hover {
+  color: #006aff;
+}
+.card-description {
+  color: #888;
+}
+
+@media screen and (max-width: 575px) {
+  .card-wrapper {
+    margin-left: -16px;
+    width: 100vw;
+  }
+}
