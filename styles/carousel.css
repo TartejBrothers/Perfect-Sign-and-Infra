@@ -75,64 +75,8 @@
   z-index: 3;
 }
 
-#wrapper {
-  width: 100%;
-
-  position: relative;
-}
-
-#carousel {
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-
-#carousel::-webkit-scrollbar {
-  height: 0;
-}
-
-#prev,
-#next {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background: white;
-  border: none;
-  padding: 8px;
-  border-radius: 50%;
-  outline: 0;
-  cursor: pointer;
-  position: absolute;
-}
-
-#prev {
-  top: 50%;
-  left: 0;
-  transform: translate(50%, -50%);
-  display: none;
-}
-
-#next {
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
-}
-
-#content {
-  display: grid;
-  grid-gap: 16px;
-  grid-auto-flow: column;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.item {
-  width: 500px;
-  border-radius: 20px;
-  background: white;
-}
-
 .testimonial {
+  font-family: "outfit", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,12 +92,15 @@
 }
 
 .testimonial h4 {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  color: #491212;
+  margin: 5px auto;
 }
 
 .testimonial p {
-  color: #000;
+  color: #491212;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 1000px) {
