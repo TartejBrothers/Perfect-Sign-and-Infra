@@ -193,7 +193,7 @@ h1 u {
 }
 .whatwedotop p,
 .whatwedobottom p {
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 .whatwedotop,
@@ -203,10 +203,10 @@ h1 u {
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  width: 100%;
+  width: 90%;
 }
 .whatwedotop .whatwedoright {
-  width: 50%;
+  width: 60%;
 }
 .whatwedotop .whatwedoleft {
   width: 40%;
@@ -216,7 +216,7 @@ h1 u {
   width: 100%;
 }
 .whatwedobottom .whatwedoleft {
-  width: 50%;
+  width: 60%;
 }
 
 .whatwedobottom .whatwedoright {
