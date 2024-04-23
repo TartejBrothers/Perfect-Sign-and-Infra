@@ -149,6 +149,14 @@ body {
   max-height: 140vh;
   overflow: hidden;
 }
+.homeheadercenter button {
+  z-index: 20;
+}
+.homeheadercenter a {
+  color: #000000;
+  z-index: 20;
+  overflow: visible;
+}
 .homecarousel {
   display: flex;
   justify-content: center;
