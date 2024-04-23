@@ -129,6 +129,7 @@ body {
   font-weight: 300;
 }
 .homeheadercenter button {
+  cursor: pointer !important;
   padding: 10px 20px;
   margin-top: 40px;
   border: none;
@@ -136,10 +137,8 @@ body {
   border-radius: 30px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.7);
-
+  background-color: #ffffff;
   color: #000000;
-  cursor: pointer;
 }
 .bluebloom {
   position: absolute;
@@ -149,6 +148,16 @@ body {
   max-height: 140vh;
   overflow: hidden;
 }
+
+.homeheadercenter button {
+  z-index: 20;
+}
+.homeheadercenter a {
+  color: #000000;
+  z-index: 20;
+  overflow: visible;
+}
+
 .homecarousel {
   display: flex;
   justify-content: center;
@@ -180,15 +189,20 @@ h1 u {
   padding: 50px 20px;
   z-index: 100;
 }
+
+.whatwedo h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
 .whatwedo h2 {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 10px;
 }
 .whatwedo p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4;
 }
 .whatwedotop p,
@@ -507,6 +521,10 @@ textarea {
   .homeheadercenter button {
     font-size: 16px;
   }
+  .homecarousel {
+    display: flex;
+    flex-direction: column;
+  }
   .homecarousel h1 {
     font-size: 30px;
   }
@@ -536,7 +554,14 @@ textarea {
     font-size: 30px;
   }
   .whatwedo p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .whatwedo .text{
+    text-align: center;
+  }
+  .whatwedotop{
+    flex-direction: column-reverse;
   }
   .whatwedotop p,
   .whatwedobottom p {

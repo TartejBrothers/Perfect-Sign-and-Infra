@@ -53,10 +53,10 @@
             We Innovate with passion & perfection, Making your Imagination a
             reality.
           </p>
-          <button>Learn More</button>
+          <a href="#homecarousel"><button>Learn More</button></a>
         </div>
       </div>
-      <div class="homecarousel">
+      <div class="homecarousel" id="homecarousel">
         <h1>What is <u>Perfect Sign</u> About?</h1>
         <div class="carousel">
           <ul class="carousel__list">
@@ -87,7 +87,7 @@
       </div>
       <div class="whatwedo">
         <h1>What We Do At <u>Perfect Sign?</u></h1>
-        <p>
+        <p class="text">
           At Perfect Sign, we blend creativity with functionality to provide
           exceptional services in both design and infrastructure.
         </p>
@@ -269,5 +269,16 @@
     </div>
     <script src="script/navbar.js"></script>
     <script src="script/carousel.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const learnMoreButton = document.getElementById('learnMoreButton');
+        learnMoreButton.addEventListener('click', function(event) {
+          event.preventDefault(); 
+          const homecarouselSection = document.getElementById('homecarousel');
+          console.log('Learn More button clicked');
+          homecarouselSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>

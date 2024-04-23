@@ -10,9 +10,9 @@
   list-style: none;
   position: relative;
   width: 100%;
-  min-height: 250px;
+  min-height: 230px;
   justify-content: center;
-  perspective: 250px;
+  perspective: 230px;
 }
 .carousel__item {
   display: flex;
@@ -89,6 +89,7 @@
   border-radius: 100%;
   width: 100px;
   top: -60px;
+  z-index: 10;
 }
 
 .testimonial h4 {
@@ -106,5 +107,8 @@
 @media screen and (max-width: 1000px) {
   .carousel__item {
     width: 50%;
+  }
+  .carousel__list{
+    margin-bottom: -70px;
   }
 }
